@@ -65,7 +65,7 @@ const PARTICIPATING_COUNTIES = [
   { countyfp: "105", name: "Trinity", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon." },
   { countyfp: "107", name: "Tulare", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon." },
   { countyfp: "109", name: "Tuolumne", profile: 'fullmodel', },
-  { countyfp: "111", name: "Ventura", profile: 'lfullmodelite', outoforder:"Polling location modeling will be provided for this county soon." },
+  { countyfp: "111", name: "Ventura", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon." },
   { countyfp: "113", name: "Yolo", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon." },
   { countyfp: "115", name: "Yuba", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon." },
 ];
