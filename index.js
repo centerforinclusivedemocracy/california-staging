@@ -83,24 +83,24 @@ function initStatewideMap () {
                 } catch (error) {}  // catch = leave undefined, it's OK
 
 
-                // let message = 'Not analyzed';
-                // if (countyinfo) {
-                //     switch (countyinfo.profile) {
-                //         case 'fullmodelGIN':
-                //         case 'fullmodelCID':
-                //         case 'fullmodelTEMP':
-                //         case 'fullexceptsuggested':
-                //             message = 'Suggested Voting Locations';
-                //             break;
-                //         case 'lite':
-                //             message = 'Community-Level Demographic and Voter Data';
-                //             break;
-                //         default:
-                //             console.error(`County ${countyinfo.countyfp} has unknown profile '${countyinfo.profile}' for creating tooltip`);
-                //             message = 'Unknown status';
-                //             break;
-                //     }
-                // }
+                let message = 'Not analyzed';
+                if (countyinfo) {
+                    switch (countyinfo.profile) {
+                        case 'fullmodelGIN':
+                        case 'fullmodelCID':
+                        case 'fullmodelTEMP':
+                        case 'fullexceptsuggested':
+                            message = 'Suggested Voting Locations';
+                            break;
+                        case 'lite':
+                            message = 'Community-Level Demographic and Voter Data';
+                            break;
+                        default:
+                            console.error(`County ${countyinfo.countyfp} has unknown profile '${countyinfo.profile}' for creating tooltip`);
+                            message = 'Unknown status';
+                            break;
+                    }
+                }
 
                 const popupcontent = `<h1>${feature.properties.name}</h1>${message}`;
 
