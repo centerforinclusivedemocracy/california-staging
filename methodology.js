@@ -17,6 +17,7 @@ function initFillScopeLists () {
         switch (countyinfo.profile) {
             case 'fullmodelGIN':
             case 'fullmodelCID':
+            case 'fullmodelTEMP':
             case 'fullexceptsuggested':
                 $targetlist = $listing_full;
                 break;

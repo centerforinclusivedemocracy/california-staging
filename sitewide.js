@@ -27,7 +27,7 @@ const PARTICIPATING_COUNTIES = [
   { countyfp: "029", name: "Kern", profile: 'fullmodelCID', },
   { countyfp: "031", name: "Kings", profile: 'fullmodelCID', },
   { countyfp: "033", name: "Lake", profile: 'fullmodelCID', },
-  { countyfp: "035", name: "Lassen", profile: 'fullmodelCID', outoforder:"Vote-by-mail data update in progress." },
+  { countyfp: "035", name: "Lassen", profile: 'fullmodelTEMP', outoforder:"Vote-by-mail data update in progress." },
   { countyfp: "037", name: "Los Angeles", profile: 'fullmodelGIN', },
   { countyfp: "039", name: "Madera", profile: 'fullmodelGIN', },
   { countyfp: "041", name: "Marin", profile: 'fullmodelCID', },
@@ -493,6 +493,29 @@ DATA_PROFILES.fullmodelGIN = {
         DATA_LAYERS.pollvoter_dens,
         DATA_LAYERS.popdens,
         DATA_LAYERS.vbm_rate_tot, DATA_LAYERS.vbm_rate_asn, DATA_LAYERS.vbm_rate_lat, DATA_LAYERS.vbm_rate_youth,
+    ],
+    populationdata: [
+        DATA_LAYERS.prc_black, DATA_LAYERS.prc_asian, DATA_LAYERS.prc_latino, DATA_LAYERS.prc_white,
+    ],
+    pointsofinterest: [
+        DATA_LAYERS.pricenter2020,DATA_LAYERS.poi_govish, DATA_LAYERS.poi_misc, DATA_LAYERS.poi,
+    ],
+};
+
+DATA_PROFILES.fullmodelTEMP = {
+    suggestedareas: [
+        DATA_LAYERS.four_day_sites, DATA_LAYERS.eleven_day_sites, DATA_LAYERS.dropbox_sites, DATA_LAYERS.all_sites_scored,
+    ],
+    additionalareas: [
+        DATA_LAYERS.additional_sites_model, DATA_LAYERS.additional_sites_distance,
+    ],
+    sitingcriteria: [
+        DATA_LAYERS.transit_stops,
+        DATA_LAYERS.cvapdens, DATA_LAYERS.job_dens,
+        DATA_LAYERS.tot_elignonreg_prc,
+        DATA_LAYERS.prcdisabled, DATA_LAYERS.prc_nonengprof, DATA_LAYERS.prc_caraccess_final, DATA_LAYERS.prc_pov_final, DATA_LAYERS.prc_youth_final,
+        DATA_LAYERS.pollvoter_dens,
+        DATA_LAYERS.popdens,
     ],
     populationdata: [
         DATA_LAYERS.prc_black, DATA_LAYERS.prc_asian, DATA_LAYERS.prc_latino, DATA_LAYERS.prc_white,
