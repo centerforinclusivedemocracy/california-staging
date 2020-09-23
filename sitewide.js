@@ -11,7 +11,7 @@
 // exceptlayers = skip these layers when loading the data profile, for counties to opt-out from individual layers
 const PARTICIPATING_COUNTIES = [
   { countyfp: "001", name: "Alameda", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon." },
-  { countyfp: "003", name: "Alpine", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon." },
+  { countyfp: "003", name: "Alpine", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon." },
   { countyfp: "005", name: "Amador", profile: 'fullmodel', },
   { countyfp: "007", name: "Butte*", profile: 'fullexceptsuggested', datafootnote: "Note: Census data may not reflect current population for this county.", outoforder: "Due to recent changes to the county population, we are not providing vote center siting suggestions for this county.", },
   { countyfp: "009", name: "Calaveras", profile: 'fullmodel', },
@@ -41,7 +41,7 @@ const PARTICIPATING_COUNTIES = [
   { countyfp: "057", name: "Nevada", profile: 'fullmodel', },
   { countyfp: "059", name: "Orange", profile: 'fullmodel', },
   { countyfp: "061", name: "Placer", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon." },
-  { countyfp: "063", name: "Plumas", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon." },
+  { countyfp: "063", name: "Plumas", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon." },
   { countyfp: "065", name: "Riverside", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon." },
   { countyfp: "067", name: "Sacramento", profile: 'fullmodel', },
   { countyfp: "069", name: "San Benito", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon." },
@@ -55,7 +55,7 @@ const PARTICIPATING_COUNTIES = [
   { countyfp: "085", name: "Santa Clara", profile: 'fullmodel', },
   { countyfp: "087", name: "Santa Cruz", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon." },
   { countyfp: "089", name: "Shasta", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon." },
-  { countyfp: "091", name: "Sierra", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon." },
+  { countyfp: "091", name: "Sierra", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon." },
   { countyfp: "093", name: "Siskiyou", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon." },
   { countyfp: "095", name: "Solano", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon." },
   { countyfp: "097", name: "Sonoma", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon." },
