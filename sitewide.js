@@ -502,7 +502,7 @@ DATA_PROFILES.fullmodelGIN = {
     ],
 };
 
-DATA_PROFILES.lite = Object.assign({}, DATA_PROFILES.fullmodel);
+DATA_PROFILES.lite = Object.assign({}, DATA_PROFILES.fullmodelGIN);
 DATA_PROFILES.lite.suggestedareas = [];
 DATA_PROFILES.lite.additionalareas = [];
 DATA_PROFILES.lite.pointsofinterest = [
@@ -517,7 +517,7 @@ DATA_PROFILES.lite.sitingcriteria = [
         DATA_LAYERS.vbm_rate_tot, DATA_LAYERS.vbm_rate_asn, DATA_LAYERS.vbm_rate_lat, DATA_LAYERS.vbm_rate_youth,
 ];
 
-DATA_PROFILES.fullexceptsuggested = Object.assign({}, DATA_PROFILES.fullmodel);  // a specific one that's full but we hide the Suggested Areas, but keep others
+DATA_PROFILES.fullexceptsuggested = Object.assign({}, DATA_PROFILES.fullmodelGIN);  // a specific one that's full but we hide the Suggested Areas, but keep others
 DATA_PROFILES.fullexceptsuggested.suggestedareas = [];
 DATA_PROFILES.fullexceptsuggested.additionalareas = [];
 
