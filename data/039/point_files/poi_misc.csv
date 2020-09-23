@@ -1,6 +1,4 @@
 osm_id,code,fclass,name,lon,lat
-358773264,2082,school,Raymond Granite Union High School,-119.90627,37.20856
-358834701,2082,school,Raymond-Knowles Elementary School,-119.90877,37.21161
 358761254,2082,school,Bailey Flat School,-119.81349,37.35216
 358795345,2082,school,Gateway Christian School,-119.64154,37.34355
 358834544,2082,school,Ahwahnee Hills Continuation High School,-119.72675,37.37462
@@ -13,9 +11,8 @@ osm_id,code,fclass,name,lon,lat
 3742206834,2402,motel,Yosemite Sierra Inn,-119.64521,37.33819
 5776879653,2402,motel,Apple Blossom Inn,-119.73395,37.39978
 6597719928,2501,supermarket,Grocery outlet,-119.65666,37.33414
-358778499,2082,school,Webster School,-119.85737,36.88078
-358834782,2082,school,Webster Elementary School,-119.88988,36.93106
-2928184902,2402,motel,Black Lodge,-119.73216,37.15046
+358773264,2082,school,Raymond Granite Union High School,-119.90627,37.20856
+358834701,2082,school,Raymond-Knowles Elementary School,-119.90877,37.21161
 358760622,2082,school,Adams School,-120.08016,36.95717
 358760837,2082,school,Alpha School,-120.08294,36.91606
 358761156,2082,school,Ashview School,-120.40184,37.0405
@@ -42,3 +39,6 @@ osm_id,code,fclass,name,lon,lat
 2954890059,2012,community_centre,Frank A Bergon Senior Center,-120.05658,36.96041
 4312183091,2303,cafe,Starbucks,-120.08608,36.98136
 6196289554,2303,cafe,,-120.13154,37.01945
+358778499,2082,school,Webster School,-119.85737,36.88078
+358834782,2082,school,Webster Elementary School,-119.88988,36.93106
+2928184902,2402,motel,Black Lodge,-119.73216,37.15046
