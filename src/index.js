@@ -59,7 +59,9 @@ function initStatewideMap () {
                 if (! countyinfo) return BOUNDSTYLE_DEFAULT;  // not participating, default style
 
                 switch (countyinfo.profile) {
-                    case 'fullmodel':
+                    case 'fullmodelGIN':
+                    case 'fullmodelCID':
+                    case 'fullmodelTEMP':
                     case 'fullexceptsuggested':
                         return BOUNDSTYLE_FULL;
                     case 'lite':
