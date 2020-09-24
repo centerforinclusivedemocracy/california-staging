@@ -525,7 +525,7 @@ DATA_PROFILES.fullmodelTEMP = {
     ],
 };
 
-DATA_PROFILES.lite = Object.assign({}, DATA_PROFILES.fullmodel);
+DATA_PROFILES.lite = Object.assign({}, DATA_PROFILES.fullmodelGIN);
 DATA_PROFILES.lite.suggestedareas = [];
 DATA_PROFILES.lite.additionalareas = [];
 DATA_PROFILES.lite.pointsofinterest = [
