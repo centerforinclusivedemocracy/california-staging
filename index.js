@@ -88,9 +88,11 @@ function initStatewideMap () {
                     switch (countyinfo.profile) {
                         case 'fullmodel':
                         case 'fullmodelGIN':
+                        case 'fullexceptsuggested':
+                            message = 'Suggested Voting Centers';
+                            break;
                         case 'fullmodelCID':
                         case 'fullmodelTEMP':
-                        case 'fullexceptsuggested':
                             message = 'Suggested Voting Locations';
                             break;
                         case 'lite':
