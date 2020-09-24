@@ -11,9 +11,9 @@ L.Control.StatewideMapLegend = L.Control.extend({
         this.container = L.DomUtil.create('div', 'leaflet-bar leaflet-control leaflet-statewidemaplegend-control');
 
         this.container.innerHTML = '';
+        this.container.innerHTML += '<div class="legend-entry"><span class="legend-swatch legend-swatch-fullmodelCID"></span> Suggested Voting Locations </div>';
+        this.container.innerHTML += '<div class="legend-entry"><span class="legend-swatch legend-swatch-fullmodelGIN"></span> Suggested Vote Center Locations</div>';
         this.container.innerHTML += '<div class="legend-entry"><span class="legend-swatch legend-swatch-lite"></span> Community-Level Demographic and Voter Data</div>';
-        this.container.innerHTML += '<div class="legend-entry"><span class="legend-swatch legend-swatch-fullmodel"></span> Suggested Voting Locations</div>';
-        // this.container.innerHTML += '<div class="legend-entry"><span class="legend-swatch legend-swatch-none"></span> Not Analyzed</div>';
 
         // absorb some events e.g. don't zoom the map when someone double-clicks this panel
         L.DomEvent

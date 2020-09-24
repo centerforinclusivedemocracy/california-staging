@@ -20,14 +20,14 @@
     border: 1px solid black;
     vertical-align: text-top;
 }
-.leaflet-statewidemaplegend-control .legend-swatch.legend-swatch-fullmodel {
+.leaflet-statewidemaplegend-control .legend-swatch.legend-swatch-fullmodelCID {
     background-color: #fecd1b;
     opacity: 0.75;
 }
-.leaflet-statewidemaplegend-control .legend-swatch.legend-swatch-lite {
+.leaflet-statewidemaplegend-control .legend-swatch.legend-swatch-fullmodelGIN {
     background-color: #fecd1b;
     opacity: 0.4;
 }
-.leaflet-statewidemaplegend-control .legend-swatch.legend-swatch-none {
+.leaflet-statewidemaplegend-control .legend-swatch.legend-swatch-lite {
     background-color: white;
 }
