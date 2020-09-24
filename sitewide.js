@@ -27,7 +27,7 @@ const PARTICIPATING_COUNTIES = [
     { countyfp: "029", name: "Kern", profile: 'fullmodelCID', },
     { countyfp: "031", name: "Kings", profile: 'fullmodelCID', },
     { countyfp: "033", name: "Lake", profile: 'fullmodelCID', },
-    { countyfp: "035", name: "Lassen", profile: 'fullmodelTEMP', outoforder:"Vote-by-mail data update in progress." },
+    { countyfp: "035", name: "Lassen", profile: 'fullmodelCID', outoforder:"Vote-by-mail data update in progress." },
     { countyfp: "037", name: "Los Angeles", profile: 'fullmodelGIN', },
     { countyfp: "039", name: "Madera", profile: 'fullmodelGIN', },
     { countyfp: "041", name: "Marin", profile: 'fullmodelCID', },
