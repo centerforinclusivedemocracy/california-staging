@@ -13,7 +13,7 @@ const PARTICIPATING_COUNTIES = [
     { countyfp: "001", name: "Alameda", profile: 'fullmodelCID', },
     { countyfp: "003", name: "Alpine", profile: 'lite', },
     { countyfp: "005", name: "Amador", profile: 'fullmodelGIN', },
-    { countyfp: "007", name: "Butte*", profile: 'fullexceptsuggested', datafootnote: "Note: Census data may not reflect current population for this county.", outoforder: "Due to recent changes to the county population, we are not providing vote center siting suggestions for this county.", },
+    { countyfp: "007", name: "Butte", profile: 'lite', datafootnote: "Note: Census data may not reflect current population for this county.", outoforder: "Due to recent changes to the county population, we are not providing vote center siting suggestions for this county.", },
     { countyfp: "009", name: "Calaveras", profile: 'fullmodelGIN', },
     { countyfp: "011", name: "Colusa", profile: 'fullmodelCID', },
     { countyfp: "013", name: "Contra Costa", profile: 'fullmodelCID', },
