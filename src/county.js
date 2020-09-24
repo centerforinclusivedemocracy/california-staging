@@ -28,6 +28,11 @@ function initCountyInfo () {
     if (COUNTYINFO.profile === "fullmodelCID") {
       $('#suggestedHeader').text("Suggested Voting Location and Drop Box Areas")
       $('#suggestedAdditionalHeader').text("Additional Voting Location Options")
+      var replaced = $("body").html().replace(/Vote Center/g,'Voting Location');
+      $("body").html(replaced);
+    }
+
+
     // if there is an Out Of Order message, fill in the explanation why the county is broken
     if (COUNTYINFO.outoforder) $('#outoforder').text(COUNTYINFO.outoforder);
     else $('#outoforder').remove();
