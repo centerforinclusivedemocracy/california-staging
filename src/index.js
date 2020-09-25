@@ -60,12 +60,10 @@ function initStatewideMap () {
 
                 switch (countyinfo.profile) {
                     case 'fullmodelGIN':
-                        return BOUNDSTYLE_FULLGIN;
                     case 'fullmodelCID':
-                        return BOUNDSTYLE_FULLCID;
                     case 'fullmodelTEMP':
-                    // case 'fullexceptsuggested':
-                    //     return BOUNDSTYLE_FULL;
+                    case 'fullexceptsuggested':
+                        return BOUNDSTYLE_FULL;
                     case 'lite':
                         return BOUNDSTYLE_LITE;
                     default:
