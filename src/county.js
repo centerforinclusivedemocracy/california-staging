@@ -26,7 +26,7 @@ function initCountyInfo () {
     $('#sidebar > h1').text(`${COUNTYINFO.name} County`);
 
     if (COUNTYINFO.profile === "fullmodelCID") {
-      $('#suggestedHeader').text("Suggested Voting Location and Drop Box Areas")
+      $('#suggestedHeader').text("Suggested Voting and Drop Box Locations")
       $('#suggestedAdditionalHeader').text("Additional Voting Location Options")
       var replaced = $("body").html().replace(/Vote Center/g,'Voting Location');
       $("body").html(replaced);
