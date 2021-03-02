@@ -11,8 +11,8 @@ function initFillScopeLists () {
     PARTICIPATING_COUNTIES.forEach(function (countyinfo) {
         let $targetlist;
         switch (countyinfo.profile) {
-            case 'fullmodelGIN':
-            case 'fullmodelCID':
+            case 'fullmodel_vc':
+            case 'fullmodel_pp':
             case 'fullmodelTEMP':
             case 'fullexceptsuggested':
                 $targetlist = $listing_full;

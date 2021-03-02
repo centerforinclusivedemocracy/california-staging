@@ -10,64 +10,65 @@
 // outoforder = optional message to display in top-left of county page, indicating that this county data are questionable
 // exceptlayers = skip these layers when loading the data profile, for counties to opt-out from individual layers
 const PARTICIPATING_COUNTIES = [
-    { countyfp: "001", name: "Alameda", profile: 'fullmodelCID', },
+    //SSS// We have 3 classes for CA: lite for the 4 VBM counties, fullmodel_pp for polling places, and fullmodel_vc for vote centers
+    { countyfp: "001", name: "Alameda", profile: 'fullmodel_pp', },
     { countyfp: "003", name: "Alpine", profile: 'lite', },
-    { countyfp: "005", name: "Amador", profile: 'fullmodelGIN', },
+    { countyfp: "005", name: "Amador", profile: 'fullmodel_vc', },
     { countyfp: "007", name: "Butte", profile: 'lite', datafootnote: "Note: Census data may not reflect current population for this county.", outoforder: "Due to recent changes to the county population, we are not providing vote center siting suggestions for this county.", },
-    { countyfp: "009", name: "Calaveras", profile: 'fullmodelGIN', },
-    { countyfp: "011", name: "Colusa", profile: 'fullmodelCID', },
-    { countyfp: "013", name: "Contra Costa", profile: 'fullmodelCID', },
-    { countyfp: "015", name: "Del Norte", profile: 'fullmodelCID', },
-    { countyfp: "017", name: "El Dorado", profile: 'fullmodelGIN', },
-    { countyfp: "019", name: "Fresno", profile: 'fullmodelGIN', },
-    { countyfp: "021", name: "Glenn", profile: 'fullmodelCID', },
-    { countyfp: "023", name: "Humboldt", profile: 'fullmodelCID', },
-    { countyfp: "025", name: "Imperial", profile: 'fullmodelCID', },
-    { countyfp: "027", name: "Inyo", profile: 'fullmodelCID', },
-    { countyfp: "029", name: "Kern", profile: 'fullmodelCID', },
-    { countyfp: "031", name: "Kings", profile: 'fullmodelCID', },
-    { countyfp: "033", name: "Lake", profile: 'fullmodelCID', },
-    { countyfp: "035", name: "Lassen", profile: 'fullmodelCID', outoforder:"Vote-by-mail data update in progress." },
-    { countyfp: "037", name: "Los Angeles", profile: 'fullmodelGIN', },
-    { countyfp: "039", name: "Madera", profile: 'fullmodelGIN', },
-    { countyfp: "041", name: "Marin", profile: 'fullmodelCID', },
-    { countyfp: "043", name: "Mariposa", profile: 'fullmodelGIN', },
-    { countyfp: "045", name: "Mendocino", profile: 'fullmodelCID', },
-    { countyfp: "047", name: "Merced", profile: 'fullmodelCID', },
-    { countyfp: "049", name: "Modoc", profile: 'fullmodelCID', },
-    { countyfp: "051", name: "Mono", profile: 'fullmodelCID', },
-    { countyfp: "053", name: "Monterey", profile: 'fullmodelCID', },
-    { countyfp: "055", name: "Napa", profile: 'fullmodelGIN', },
-    { countyfp: "057", name: "Nevada", profile: 'fullmodelGIN', },
-    { countyfp: "059", name: "Orange", profile: 'fullmodelGIN', },
-    { countyfp: "061", name: "Placer", profile: 'fullmodelCID', },
+    { countyfp: "009", name: "Calaveras", profile: 'fullmodel_vc', },
+    { countyfp: "011", name: "Colusa", profile: 'fullmodel_pp', },
+    { countyfp: "013", name: "Contra Costa", profile: 'fullmodel_pp', },
+    { countyfp: "015", name: "Del Norte", profile: 'fullmodel_pp', },
+    { countyfp: "017", name: "El Dorado", profile: 'fullmodel_vc', },
+    { countyfp: "019", name: "Fresno", profile: 'fullmodel_vc', },
+    { countyfp: "021", name: "Glenn", profile: 'fullmodel_pp', },
+    { countyfp: "023", name: "Humboldt", profile: 'fullmodel_pp', },
+    { countyfp: "025", name: "Imperial", profile: 'fullmodel_pp', },
+    { countyfp: "027", name: "Inyo", profile: 'fullmodel_pp', },
+    { countyfp: "029", name: "Kern", profile: 'fullmodel_pp', },
+    { countyfp: "031", name: "Kings", profile: 'fullmodel_pp', },
+    { countyfp: "033", name: "Lake", profile: 'fullmodel_pp', },
+    { countyfp: "035", name: "Lassen", profile: 'fullmodel_pp', outoforder:"Vote-by-mail data update in progress." },
+    { countyfp: "037", name: "Los Angeles", profile: 'fullmodel_vc', },
+    { countyfp: "039", name: "Madera", profile: 'fullmodel_vc', },
+    { countyfp: "041", name: "Marin", profile: 'fullmodel_pp', },
+    { countyfp: "043", name: "Mariposa", profile: 'fullmodel_vc', },
+    { countyfp: "045", name: "Mendocino", profile: 'fullmodel_pp', },
+    { countyfp: "047", name: "Merced", profile: 'fullmodel_pp', },
+    { countyfp: "049", name: "Modoc", profile: 'fullmodel_pp', },
+    { countyfp: "051", name: "Mono", profile: 'fullmodel_pp', },
+    { countyfp: "053", name: "Monterey", profile: 'fullmodel_pp', },
+    { countyfp: "055", name: "Napa", profile: 'fullmodel_vc', },
+    { countyfp: "057", name: "Nevada", profile: 'fullmodel_vc', },
+    { countyfp: "059", name: "Orange", profile: 'fullmodel_vc', },
+    { countyfp: "061", name: "Placer", profile: 'fullmodel_pp', },
     { countyfp: "063", name: "Plumas", profile: 'lite', },
-    { countyfp: "065", name: "Riverside", profile: 'fullmodelCID', },
-    { countyfp: "067", name: "Sacramento", profile: 'fullmodelGIN', },
-    { countyfp: "069", name: "San Benito", profile: 'fullmodelCID', },
-    { countyfp: "071", name: "San Bernardino", profile: 'fullmodelCID', },
-    { countyfp: "073", name: "San Diego", profile: 'fullmodelCID', },
-    { countyfp: "075", name: "San Francisco", profile: 'fullmodelCID', },
-    { countyfp: "077", name: "San Joaquin", profile: 'fullmodelCID', },
-    { countyfp: "079", name: "San Luis Obispo", profile: 'fullmodelCID', },
-    { countyfp: "081", name: "San Mateo", profile: 'fullmodelGIN', },
-    { countyfp: "083", name: "Santa Barbara", profile: 'fullmodelCID', },
-    { countyfp: "085", name: "Santa Clara", profile: 'fullmodelGIN', },
-    { countyfp: "087", name: "Santa Cruz", profile: 'fullmodelCID', },
-    { countyfp: "089", name: "Shasta", profile: 'fullmodelCID', },
+    { countyfp: "065", name: "Riverside", profile: 'fullmodel_pp', },
+    { countyfp: "067", name: "Sacramento", profile: 'fullmodel_vc', },
+    { countyfp: "069", name: "San Benito", profile: 'fullmodel_pp', },
+    { countyfp: "071", name: "San Bernardino", profile: 'fullmodel_pp', },
+    { countyfp: "073", name: "San Diego", profile: 'fullmodel_pp', },
+    { countyfp: "075", name: "San Francisco", profile: 'fullmodel_pp', },
+    { countyfp: "077", name: "San Joaquin", profile: 'fullmodel_pp', },
+    { countyfp: "079", name: "San Luis Obispo", profile: 'fullmodel_pp', },
+    { countyfp: "081", name: "San Mateo", profile: 'fullmodel_vc', },
+    { countyfp: "083", name: "Santa Barbara", profile: 'fullmodel_pp', },
+    { countyfp: "085", name: "Santa Clara", profile: 'fullmodel_vc', },
+    { countyfp: "087", name: "Santa Cruz", profile: 'fullmodel_pp', },
+    { countyfp: "089", name: "Shasta", profile: 'fullmodel_pp', },
     { countyfp: "091", name: "Sierra", profile: 'lite', },
-    { countyfp: "093", name: "Siskiyou", profile: 'fullmodelCID', },
-    { countyfp: "095", name: "Solano", profile: 'fullmodelCID', },
-    { countyfp: "097", name: "Sonoma", profile: 'fullmodelCID', },
-    { countyfp: "099", name: "Stanislaus", profile: 'fullmodelCID', },
-    { countyfp: "101", name: "Sutter", profile: 'fullmodelCID', },
-    { countyfp: "103", name: "Tehama", profile: 'fullmodelCID', },
-    { countyfp: "105", name: "Trinity", profile: 'fullmodelCID', },
-    { countyfp: "107", name: "Tulare", profile: 'fullmodelCID', },
-    { countyfp: "109", name: "Tuolumne", profile: 'fullmodelGIN', },
-    { countyfp: "111", name: "Ventura", profile: 'fullmodelCID', },
-    { countyfp: "113", name: "Yolo", profile: 'fullmodelCID', },
-    { countyfp: "115", name: "Yuba", profile: 'fullmodelCID', },
+    { countyfp: "093", name: "Siskiyou", profile: 'fullmodel_pp', },
+    { countyfp: "095", name: "Solano", profile: 'fullmodel_pp', },
+    { countyfp: "097", name: "Sonoma", profile: 'fullmodel_pp', },
+    { countyfp: "099", name: "Stanislaus", profile: 'fullmodel_pp', },
+    { countyfp: "101", name: "Sutter", profile: 'fullmodel_pp', },
+    { countyfp: "103", name: "Tehama", profile: 'fullmodel_pp', },
+    { countyfp: "105", name: "Trinity", profile: 'fullmodel_pp', },
+    { countyfp: "107", name: "Tulare", profile: 'fullmodel_pp', },
+    { countyfp: "109", name: "Tuolumne", profile: 'fullmodel_vc', },
+    { countyfp: "111", name: "Ventura", profile: 'fullmodel_pp', },
+    { countyfp: "113", name: "Yolo", profile: 'fullmodel_pp', },
+    { countyfp: "115", name: "Yuba", profile: 'fullmodel_pp', },
   ];
 
 const getParticipatingCountyInfo = function (countyfp) {
@@ -454,7 +455,7 @@ DATA_LAYERS.poi = {
 // lite = all layers EXCEPT suggested areas
 const DATA_PROFILES = {};
 
-DATA_PROFILES.fullmodelCID = {
+DATA_PROFILES.fullmodel_pp = {
     suggestedareas: [
         DATA_LAYERS.four_day_sites, DATA_LAYERS.eleven_day_sites, DATA_LAYERS.dropbox_sites, DATA_LAYERS.all_sites_scored,
     ],
@@ -487,7 +488,7 @@ DATA_PROFILES.fullmodelCID = {
     ],
 };
 
-DATA_PROFILES.fullmodelGIN = {
+DATA_PROFILES.fullmodel_vc = {
     suggestedareas: [
         DATA_LAYERS.four_day_sites, DATA_LAYERS.eleven_day_sites, DATA_LAYERS.dropbox_sites, DATA_LAYERS.all_sites_scored,
     ],
@@ -520,30 +521,30 @@ DATA_PROFILES.fullmodelGIN = {
     ],
 };
 
-DATA_PROFILES.fullmodelTEMP = {
-    suggestedareas: [
-        DATA_LAYERS.four_day_sites, DATA_LAYERS.eleven_day_sites, DATA_LAYERS.dropbox_sites, DATA_LAYERS.all_sites_scored,
-    ],
-    additionalareas: [
-        DATA_LAYERS.additional_sites_model, DATA_LAYERS.additional_sites_distance,
-    ],
-    sitingcriteria: [
-        DATA_LAYERS.transit_stops,
-        DATA_LAYERS.cvapdens, DATA_LAYERS.job_dens,
-        DATA_LAYERS.tot_elignonreg_prc,
-        DATA_LAYERS.prcdisabled, DATA_LAYERS.prc_nonengprof, DATA_LAYERS.prc_caraccess_final, DATA_LAYERS.prc_pov_final, DATA_LAYERS.prc_youth_final,
-        DATA_LAYERS.pollvoter_dens,
-        DATA_LAYERS.popdens,
-    ],
-    populationdata: [
-        DATA_LAYERS.prc_black, DATA_LAYERS.prc_asian, DATA_LAYERS.prc_latino, DATA_LAYERS.prc_white,
-    ],
-    pointsofinterest: [
-        DATA_LAYERS.pripoll2020,DATA_LAYERS.poi_govish, DATA_LAYERS.poi_misc, DATA_LAYERS.poi,
-    ],
-};
+// DATA_PROFILES.fullmodelTEMP = {
+//     suggestedareas: [
+//         DATA_LAYERS.four_day_sites, DATA_LAYERS.eleven_day_sites, DATA_LAYERS.dropbox_sites, DATA_LAYERS.all_sites_scored,
+//     ],
+//     additionalareas: [
+//         DATA_LAYERS.additional_sites_model, DATA_LAYERS.additional_sites_distance,
+//     ],
+//     sitingcriteria: [
+//         DATA_LAYERS.transit_stops,
+//         DATA_LAYERS.cvapdens, DATA_LAYERS.job_dens,
+//         DATA_LAYERS.tot_elignonreg_prc,
+//         DATA_LAYERS.prcdisabled, DATA_LAYERS.prc_nonengprof, DATA_LAYERS.prc_caraccess_final, DATA_LAYERS.prc_pov_final, DATA_LAYERS.prc_youth_final,
+//         DATA_LAYERS.pollvoter_dens,
+//         DATA_LAYERS.popdens,
+//     ],
+//     populationdata: [
+//         DATA_LAYERS.prc_black, DATA_LAYERS.prc_asian, DATA_LAYERS.prc_latino, DATA_LAYERS.prc_white,
+//     ],
+//     pointsofinterest: [
+//         DATA_LAYERS.pripoll2020,DATA_LAYERS.poi_govish, DATA_LAYERS.poi_misc, DATA_LAYERS.poi,
+//     ],
+// };
 
-DATA_PROFILES.lite = Object.assign({}, DATA_PROFILES.fullmodelGIN);
+DATA_PROFILES.lite = Object.assign({}, DATA_PROFILES.fullmodel_vc);
 DATA_PROFILES.lite.suggestedareas = [];
 DATA_PROFILES.lite.additionalareas = [];
 DATA_PROFILES.lite.pointsofinterest = [

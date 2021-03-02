@@ -63,9 +63,8 @@ function initStatewideMap () {
                 if (! countyinfo) return BOUNDSTYLE_DEFAULT;  // not participating, default style
 
                 switch (countyinfo.profile) {
-                    case 'fullmodelGIN':
-                    case 'fullmodelCID':
-                    case 'fullmodelTEMP':
+                    case 'fullmodel_vc':
+                    case 'fullmodel_pp':
                     case 'fullexceptsuggested':
                         return BOUNDSTYLE_FULL;
                     case 'lite':
@@ -86,13 +85,11 @@ function initStatewideMap () {
                 let message = 'Not analyzed';
                 if (countyinfo) {
                     switch (countyinfo.profile) {
-                        case 'fullmodel':
-                        case 'fullmodelGIN':
+                        case 'fullmodel_vc':
                         case 'fullexceptsuggested':
                             message = 'Suggested Voting Centers';
                             break;
-                        case 'fullmodelCID':
-                        case 'fullmodelTEMP':
+                        case 'fullmodel_pp':
                             message = 'Suggested Voting Locations';
                             break;
                         case 'lite':
