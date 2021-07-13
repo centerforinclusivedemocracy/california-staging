@@ -438,7 +438,7 @@ DATA_LAYERS.pripoll2020 = {
 };
 DATA_LAYERS.pricenter2020 = {
     id: 'pricenter2020',
-    title: "2020 Primary Vote Center Locations",
+    title: "2020 Primary Election Voting Locations",
     csvfile: 'point_files/primary_votecenters_2020.csv',
     circle: { radius: 20, color: '#ffa200', opacity: 1, fillColor: '#ffa200', fillOpacity: 1, weight: 2,  },
     popupnamefield: 'name',
