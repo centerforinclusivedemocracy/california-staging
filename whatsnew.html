@@ -76,7 +76,7 @@
 
     <!-- Sitewide styles and code; more for additional pages, will be included below -->
     <link rel="stylesheet" href="./sitewide.css?cachebust-b40954767c" />
-    <script src="./sitewide.js?cachebust-6e6507c2c2"></script>
+    <script src="./sitewide.js?cachebust-9b959461bb"></script>
     <link rel="stylesheet" href="./whatsnew.css?cachebust-52dc44e32d" />
     <script src="./whatsnew.js?cachebust-c789505063"></script>
 </head>
@@ -109,12 +109,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="row">
     <div class="col">
       <h1 id="title">What's New</h1>
-      <button class="accordion"><h3 id="button">July 12, 2021 Update <i class="fa fa-chevron-down"></i></h3></button>
+      <button class="accordion"><h3 id="button">July 16, 2021 Update <i class="fa fa-chevron-down"></i></h3></button>
       <div class="panel">
         <br>
         <p>
-          The California Voting Location Siting Tool was updated on July 12, 2021 with the following changes to the voting location data and map design. For more detailed information about our methods please see our <a href="methodology.html" target="_blank">Methodology</a>.
+          The California Voting Location Siting Tool was updated on July 16, 2021 with the following changes to the voting location modeling, data, and map design. For more detailed information about our methods please see our <a href="methodology.html" target="_blank">Methodology</a>.
         </p>
+
+        <h2 id="modelchanges">Model Updates</h2> 
+        <ul>
+          <li><b>Population Clustering: </b>In this update, we adjusted our method of clustering populated census blocks into larger geographic clusters to increase the stability and robustness of our results.</li>
+          <li><b>Facility Location: </b>We adjusted our facility location model to ensure that all sites are selected based on population demand.</li>
+          <li><b>Additional Areas: </b>When identifying additional suggested areas, we modified our methods to better account for population.</li>
+          <li><b>Expansion Counties: </b>When the Siting Tool was initially created, the model was run on a set of priority counties only. In this update, we expanded the Tool to include model results for all counties.</li>  
+        </ul>
 
         <h2 id="data">Data Updates</h2>
           <p>
